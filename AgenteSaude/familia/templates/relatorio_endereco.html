@@ -1,0 +1,26 @@
+<html>
+<head><title>Relatorio por Endereco numero pessoa por casa</title>
+
+
+</head>
+<body>
+	<h1> Relatorio</h1>
+
+	{% if endereco %}
+
+		<table border=1>
+		{% for ender in endereco %}
+
+		<tr>
+			<td>Casa {{ender.NumeroFamilia_endereco_Numero}}
+		</tr>
+		<tr>
+			<td>{{ender.NumeroFamilia_Cadastrado}}</td>
+		</tr>
+
+		{% endfor %}
+		
+		</talble>
+	{% endif %}
+</body>
+</html>
